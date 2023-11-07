@@ -114,7 +114,9 @@ html{
 
 body {
     font-family: Oswald, sans-serif;
-    background-color: #016FB9;
+    background: rgb(233,10,10);
+background: linear-gradient(119deg, rgba(233,10,10,1) 21%, rgba(205,34,39,1) 38%, rgba(0,212,255,1) 70%);
+    /*background-color: #016FB9;*/
     color: #800E13;
     text-align: center;
 }
@@ -130,7 +132,8 @@ header{
     justify-content: space-around;
     align-items: center;
     z-index: 2;    
-    background-color: #000000;
+    background-color: #000;
+    
 }
 header h2:hover{
     cursor: pointer;
@@ -227,10 +230,35 @@ button a:hover {
 
 #servicios{
     
+    animation: wave 3s linear infinite alternate;
+    order: 2;
+    color: #fde9ff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: clamp(3rem, 10vw, 6rem);
+    line-height: 0.75em;
+    text-align: center;
+    text-shadow: 3px 1px 1px rgb(163, 30, 30), 2px 2px 1px #1dddeb, 4px 2px 1px rgb(20, 63, 66),
+        3px 3px 1px #1dddeb, 5px 3px 1px rgb(20, 63, 66), 4px 4px 1px #1dddeb,
+        6px 4px 1px rgb(20, 63, 66), 5px 5px 1px #1dddeb, 7px 5px 1px rgb(20, 63, 66),
+        6px 6px 1px #1dddeb, 8px 6px 1px rgb(20, 63, 66), 7px 7px 1px #1dddeb,
+        9px 7px 1px rgb(20, 63, 66); 
     margin-top: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 15px 0px 0px 0px;
     
+}
+
+@keyframes wave{
+    0%{
+        transform: rotate(0deg);
+    }
+    50% { 
+        transform: rotate(-3deg) 
+    }
+    100% {
+        transform: rotate(3deg);
+    }
 }
 
 .servicios_div{
@@ -240,13 +268,28 @@ button a:hover {
     padding-bottom: 20px;
 }
 
-.servicios_div .servicio{
-    max-width: 390px;
-    background-color: #FFC505;
+.border-top-bottom{
     border-radius: 8px;
     border: solid;
     border-width: 3px 1px 3px 1px;
     border-color: #000;
+}
+
+.border-left-right{
+    border-radius: 8px;
+    border: solid;
+    border-width: 1px 3px 1px 3px;
+    border-color: #000;
+}
+
+.servicios_div .servicio:hover{
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+.servicios_div .servicio{
+    max-width: 390px;
+    background-color: #FFC505;
     padding: 20px 8px 20px 8px;
 }
 
@@ -265,18 +308,19 @@ button a:hover {
 
 
 .descripcion h1{
-    margin-bottom: 20px ;
+    margin-bottom: 40px ;
 }
 .descripcion{
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
     justify-content: center;
     padding: 10px;
+    background-color: #ffc400d1;
+
 }
 .descripcion div{
-    background-color: #ffc400d1;
-    width: 100%;
+    flex-direction: column;
     display: flex;
     align-items: center;
 
@@ -286,7 +330,7 @@ button a:hover {
     padding: 0px 10px 0px 10px  ;
 }
 
-.descripcion div img{
+.descripcion  img{
     padding-left: 5px;
     width: auto;
     height: 500px;
@@ -302,7 +346,7 @@ footer{
     padding: 10px 0px 10px 0px;
     height: 100px;
     width: 100%;
-    background-color: #ccccccce ;
+    background-color: #cccccc2b ;
 } 
 
 
@@ -321,5 +365,11 @@ footer{
 .footer_social a img{
     height: 50px;
     width: auto;
+}
+
+.footer_social img:hover{
+    height: 53px;
+    width: auto;
+    
 }
 
