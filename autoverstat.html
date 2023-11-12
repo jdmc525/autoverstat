@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autoverstat</title>
-    <link rel="stylesheet" href="/style.css">
+    
+
+    <!-- CSS REFS -->
+    <link rel="stylesheet" href="/style.css"  media="screen and (min-width: 1350px)">
+    <link rel="stylesheet" href="/style_1100px.css" media="screen and (max-width: 1350px)" >
+    <!-- <link rel="stylesheet" href="/style_tablet.css" media="screen and (max-width: 1100px)" > -->
+
+    <!-- OSWALD FONT -->
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>    
+    
+    <!-- FAVICON -->
     <link rel="icon" href="/AUTOVERSTAT LOGOS/LOGO_BLACK.png" type="image/x-icon">
+    
 </head>
 <body>
 
     <header>
         <a href="/autoverstat.html"><img id="header_logo" src="/AUTOVERSTAT LOGOS/HORIZONTAL_WTITLE.png" alt="logo"></a>
-        <h2><a class="navbar_option" href="#quoteButton" >SERVICIOS</a></h2>
+        <h2><a class="navbar_option" href="#servicios" >SERVICIOS</a></h2>
         <h2><a class="navbar_option" href="/gallery.html">GALERIA</a></h2>
         <h2><a class="navbar_option" href="https://wa.me/+50498783137">CONTACTO</a></h2>
     </header>
 
     <div class="container">
 
-        <img src="/image/photoshoot_main1-3000x2000.jpg" alt="Autoverstat Logo" class="logo">
-        <!-- <img class="mySlides fade" src="/image/photoshoot_main2-3000x2000.jpg" alt="Autoverstat Logo" class="logo"> -->
+        <div id="carousel">
+            <ul class="carousel-slides">
+                <li><img src="/image/photoshoot_main2-removebg-preview.png" alt="Image 2"></li>
+                <li><img src="/image/car6-removebg-preview.png" alt="Image 3"></li>
+                <li><img src="/image/black-605334-removebg-preview.png" alt="Image 3"></li>
+
+            </ul>
+        </div>
+
         <div class="container_welcome">
             <h1>Bienvenido a Autoverstat</h1>
             <h2>Taller de Enderezado y Pintura Automotriz</h2>
@@ -33,22 +50,37 @@
         <h1 id="servicios">Servicios</h1>
 
         <div class="servicios_div">
-            <div class="servicio border-top-bottom">
+            <div class="servicio ">
                 <img src="/image/servicio_enderezado.png" alt="Icono Servicio 2">
                 <h2>Enderezado</h2>
                 <p>Nuestro servicio de enderezado automotriz está diseñado para devolverle a su vehículo su forma y alineación originales. Utilizamos tecnología de vanguardia y técnicas precisas para corregir deformaciones y asegurar que su automóvil vuelva a estar en condiciones óptimas.</p>
+                <span class="border-bottom" ></span>
+
+                <span class="border-top"></span>
+                <span class="border-left"></span>
+                <span class="border-right"></span>
             </div>
             
-            <div class="servicio border-top-bottom">
+            <div class="servicio ">
                 <img src="/image/servicio_pintura.png" alt="Icono Servicio 1">
                 <h2>Auto Pintura</h2>
                 <p>Pintura profesional de automóviles y motocicletas.</p>
+                
+                <span class="border-top"></span>
+                <span class="border-bottom" ></span>
+                <span class="border-left"></span>
+                <span class="border-right"></span>
             </div>
     
-            <div class="servicio border-top-bottom">
+            <div class="servicio">
                 <img src="/image/servicio_pulido.png" alt="Icono Servicio 3">
                 <h2>Pulido y Cerámica</h2>
                 <p>Pulido a nivel de cerámica para un acabado perfecto y brillante.</p>
+
+                <span class="border-top"></span>
+                <span class="border-bottom" ></span>
+                <span class="border-left"></span>
+                <span class="border-right"></span>
             </div>
         </div>
     </section>

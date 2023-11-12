@@ -98,7 +98,9 @@ input, select {
 
 
 
-/*****************************************/
+/********START CODE************/
+
+
 
 html{
     scroll-behavior: smooth;
@@ -110,11 +112,9 @@ html{
 
 
 body {
-    min-width: 1350px;
+    max-width: 1350px;
     font-family: Oswald, sans-serif;
-    background: rgb(233,10,10);
-background: linear-gradient(119deg, rgba(233,10,10,1) 21%, rgba(205,34,39,1) 38%, rgba(0,212,255,1) 70%);
-    /*background-color: #016FB9;*/
+    background: linear-gradient(119deg, rgba(233,10,10,1) 21%, rgba(205,34,39,1) 38%, rgba(0,212,255,1) 70%);
     color: #800E13;
     text-align: center;
     overflow-x: hidden;
@@ -127,7 +127,7 @@ header{
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width:  100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -160,7 +160,7 @@ header h2{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 550px;
+    height: 350px;
     margin: auto;
     background-color: #000000db;
     
@@ -381,11 +381,11 @@ button a:hover {
 .servicios_div .servicio{
     max-width: 390px;
     background-color: #ffc400d1 ;
-    padding: 30px 8px 20px 8px;
+    padding: 20px 8px 20px 8px;
     border-radius: 10px;
     border: solid 3px;
     border-color: #000;
-    
+
 
 }
 
