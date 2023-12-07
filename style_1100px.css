@@ -100,7 +100,14 @@ input, select {
 
 /********START CODE************/
 
+.menuPhone{
+    display: none !important;
+}
 
+
+.hidden{
+    display: none;
+}
 
 html{
     scroll-behavior: smooth;
@@ -323,7 +330,7 @@ button a:hover {
 
 .servicios_div{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding-bottom: 20px;
 }

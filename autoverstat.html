@@ -9,7 +9,10 @@
     <!-- CSS REFS -->
     <link rel="stylesheet" href="/style.css"  media="screen and (min-width: 1350px)">
     <link rel="stylesheet" href="/style_1100px.css" media="screen and (max-width: 1350px)" >
-    <!-- <link rel="stylesheet" href="/style_tablet.css" media="screen and (max-width: 1100px)" > -->
+    <link rel="stylesheet" href="/style_tablet.css" media="screen and (max-width: 1100px, min-width:780px)" > 
+    <link rel="stylesheet" href="/style_phone.css" media="screen and (max-width: 780px)" > 
+    <link rel="stylesheet" href="/style_phoneMini.css" media="screen and (max-width: 510px)" > 
+
 
     <!-- OSWALD FONT -->
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>    
@@ -20,12 +23,20 @@
 </head>
 <body>
 
-    <header>
+    <header class="mainHeader">
+        <img  class="menuPhone" src="/image/menuPhonered.png">
         <a href="/autoverstat.html"><img id="header_logo" src="/AUTOVERSTAT LOGOS/HORIZONTAL_WTITLE.png" alt="logo"></a>
         <h2><a class="navbar_option" href="#servicios" >SERVICIOS</a></h2>
-        <h2><a class="navbar_option" href="/gallery.html">GALERIA</a></h2>
+        <h2><a class="navbar_option" href="https://www.facebook.com/autoverstat/photos">GALERIA</a></h2>
         <h2><a class="navbar_option" href="https://wa.me/+50498783137">CONTACTO</a></h2>
     </header>
+
+    <div class="menuPhoneHeader hidden" onclick="togglePhoneMenu()">
+        <h3><a class="navbar_option" href="#servicios" >SERVICIOS</a></h3>
+        <h3><a class="navbar_option" href="/gallery.html">GALERIA</a></h3>
+        <h3><a class="navbar_option" href="https://wa.me/+50498783137">CONTACTO</a></h3>
+    </div>
+    
 
     <div class="container">
 
@@ -64,7 +75,7 @@
             <div class="servicio ">
                 <img src="/image/servicio_pintura.png" alt="Icono Servicio 1">
                 <h2>Auto Pintura</h2>
-                <p>Pintura profesional de automóviles y motocicletas.</p>
+                <p>Pintura profesional de automóviles. Transformamos vehículos en obras de arte con nuestro servicio de pintura automotriz. Con precisión y pasión, devolvemos el brillo original a tu automóvil, asegurando un acabado impecable que destaca en la carretera</p>
                 
                 <span class="border-top"></span>
                 <span class="border-bottom" ></span>
@@ -74,8 +85,8 @@
     
             <div class="servicio">
                 <img src="/image/servicio_pulido.png" alt="Icono Servicio 3">
-                <h2>Pulido y Cerámica</h2>
-                <p>Pulido a nivel de cerámica para un acabado perfecto y brillante.</p>
+                <h2>Pulido Profesional</h2>
+                <p>Revive el esplendor de tu vehículo con nuestro servicio de pulido automotriz. Eliminamos imperfecciones, realzamos el brillo y protegemos la pintura, dejando tu automóvil con un acabado resplandeciente y duradero</p>
 
                 <span class="border-top"></span>
                 <span class="border-bottom" ></span>
@@ -115,7 +126,9 @@
     </footer>
 
 
-    <script src="/script.js"></script>
+
+
+     <script src="/script.js"></script>
 
 </body>
 </html>

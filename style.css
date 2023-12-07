@@ -100,6 +100,11 @@ input, select {
 
 /*****************************************/
 
+
+.menuPhone{
+    display: none !important;
+}
+
 html{
     scroll-behavior: smooth;
     scroll-padding: 100px;
@@ -122,6 +127,11 @@ background: linear-gradient(119deg, rgba(233,10,10,1) 21%, rgba(205,34,39,1) 38%
 }
 
 /******HEADER*****/
+
+.hidden{
+    display: none;
+}
+
 
 header{
     overflow: hidden;

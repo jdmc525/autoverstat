@@ -16,20 +16,24 @@ servicio.addEventListener('mouseout', function () {
 
 
 /********CARROUSEL**********/
-
+/*
 var carousel = document.getElementById('carousel');
 var slides = carousel.querySelectorAll('.carousel-slides li');
 var currentSlide = 0;
 var slideInterval = setInterval(nextSlide, 3000);
 
-function prevSlide() {
-    slides[currentSlide].style.opacity = 0;
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    slides[currentSlide].style.opacity = 1;
-}
-
 function nextSlide() {
     slides[currentSlide].style.opacity = 0;
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].style.opacity = 1;
+}*/
+
+
+var menuPhone = document.querySelector('.menuPhone');
+var menuPhoneHeader = document.querySelector('.menuPhoneHeader');
+
+menuPhone.addEventListener('click', togglePhoneMenu);
+function togglePhoneMenu() {
+    menuPhoneHeader.classList.toggle('hidden')
 }
+
