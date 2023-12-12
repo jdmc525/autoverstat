@@ -132,10 +132,10 @@ header{
     overflow: hidden;
     position: fixed;
     top: 0;
-    max-width:  780%;
+    max-width:  780px;
     display: flex;
     align-items: center;
-    z-index: 2;    
+    z-index: 1;    
     background-color: #000;
     
 }
@@ -156,7 +156,7 @@ header{
     width: 250px;
     left: 0%;
     top: 101px;
-    z-index: 2;
+    z-index: 3;
     background-color: rgba(190, 186, 186, 0.944);
     border-radius: 0 0 3% 0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -269,7 +269,7 @@ button a:hover {
 
 
 
-
+/*
 #carousel {
     position: relative;
     overflow: hidden;
@@ -308,7 +308,7 @@ button a:hover {
 
 
 
-
+*/
 
 
 
@@ -361,21 +361,7 @@ button a:hover {
     padding-bottom: 20px;
 }
 
-/*
-.border-top-bottom{
-    border-radius: 8px;
-    border: solid;
-    border-width: 3px 1px 3px 1px;
-    border-color: #000;
-}
 
-.border-left-right{
-    border-radius: 8px;
-    border: solid;
-    border-width: 1px 3px 1px 3px;
-    border-color: #000;
-}
-*/
 
 .servicios_div .servicio:hover{
     transform: scale(1.02);
@@ -461,10 +447,7 @@ button a:hover {
 }
 
 .descripcion  img{
-    padding-left: 5px;
-    height: auto;
-    max-width: 500px;
-    min-width: none;
+    display: none;
 
 }
 
@@ -474,7 +457,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 30px 0px 3% 0px;
+    padding: 30px 0px 30px 0px;
     height: 100px;
     width: 100%;
     background-color: #cccccc2b ;

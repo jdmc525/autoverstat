@@ -29,11 +29,32 @@ function nextSlide() {
 }*/
 
 
+let images = document.querySelectorAll('.carousel-slides li');
+let currentImage = 0;
+
+function changeImage() {
+ images[currentImage].style.opacity = 0;
+ currentImage = (currentImage + 1) % images.length;
+ images[currentImage].style.opacity = 1;
+}
+
+setInterval(changeImage, 3000);
+
+
+
+
+/*MENU PHONE*/
+
 var menuPhone = document.querySelector('.menuPhone');
 var menuPhoneHeader = document.querySelector('.menuPhoneHeader');
 
+
 menuPhone.addEventListener('click', togglePhoneMenu);
+
+
 function togglePhoneMenu() {
     menuPhoneHeader.classList.toggle('hidden')
 }
+
+
 
