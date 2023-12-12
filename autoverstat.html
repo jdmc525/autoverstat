@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoverstat</title>
+    
+
+    <!-- CSS REFS -->
+    <link rel="stylesheet" href="/style.css"  media="screen and (min-width: 1350px)">
+    <link rel="stylesheet" href="/style_1100px.css" media="screen and (max-width: 1350px)" >
+    <link rel="stylesheet" href="/style_tablet.css" media="screen and (max-width: 1100px, min-width:780px)" > 
+    <link rel="stylesheet" href="/style_phone.css" media="screen and (max-width: 780px)" > 
+    <link rel="stylesheet" href="/style_phoneMini.css" media="screen and (max-width: 510px)" > 
+
+
+    <!-- OSWALD FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>    
+    
+    <!-- FAVICON -->
+    <link rel="icon" href="/AUTOVERSTAT LOGOS/LOGO_BLACK.png" type="image/x-icon">
+    
+</head>
+<body>
+
+    <header class="mainHeader">
+        <img  class="menuPhone" src="/image/menuPhonered.png">
+        <a href="/autoverstat.html"><img id="header_logo" src="/AUTOVERSTAT LOGOS/HORIZONTAL_WTITLE.png" alt="logo"></a>
+        <h2><a class="navbar_option" href="#servicios" >SERVICIOS</a></h2>
+        <h2><a class="navbar_option" href="https://www.facebook.com/autoverstat/photos">GALERIA</a></h2>
+        <h2><a class="navbar_option" href="https://wa.me/+50498783137">CONTACTO</a></h2>
+    </header>
+
+    <div class="menuPhoneHeader hidden" onclick="togglePhoneMenu()">
+        <h3><a class="navbar_option" href="#servicios" >SERVICIOS</a></h3>
+        <h3><a class="navbar_option" href="/gallery.html">GALERIA</a></h3>
+        <h3><a class="navbar_option" href="https://wa.me/+50498783137">CONTACTO</a></h3>
+    </div>
+    
+
+    <div class="container">
+
+        <div id="carousel">
+            <ul class="carousel-slides">
+                <li><img src="/image/photoshoot_main2-removebg-preview.png" alt="Image 2"></li>
+                <li><img src="/image/car6-removebg-preview.png" alt="Image 3"></li>
+                <li><img src="/image/black-605334-removebg-preview.png" alt="Image 3"></li>
+
+            </ul>
+        </div>
+
+        <div class="container_welcome">
+            <h1>Bienvenido a Autoverstat</h1>
+            <h2>Taller de Enderezado y Pintura Automotriz</h2>
+            <p>Tu vehículo, nuestra pasión: acabados impecables</p>
+            <button id="quoteButton"><a href="https://wa.me/+50498783137">Cotización</a></button>
+        </div>
+    </div>
+
+    <section class="section_servicios">
+        <h1 id="servicios">Servicios</h1>
+
+        <div class="servicios_div">
+            <div class="servicio ">
+                <img src="/image/servicio_enderezado.png" alt="Icono Servicio 2">
+                <h2>Enderezado</h2>
+                <p>Nuestro servicio de enderezado automotriz está diseñado para devolverle a su vehículo su forma y alineación originales. Utilizamos tecnología de vanguardia y técnicas precisas para corregir deformaciones y asegurar que su automóvil vuelva a estar en condiciones óptimas.</p>
+             
+            </div>
+            
+            <div class="servicio ">
+                <img src="/image/servicio_pintura.png" alt="Icono Servicio 1">
+                <h2>Auto Pintura</h2>
+                <p>Pintura profesional de automóviles. Transformamos vehículos en obras de arte con nuestro servicio de pintura automotriz. Con precisión y pasión, devolvemos el brillo original a tu automóvil, asegurando un acabado impecable que destaca en la carretera</p>
+            </div>
+    
+            <div class="servicio">
+                <img src="/image/servicio_pulido.png" alt="Icono Servicio 3">
+                <h2>Pulido Profesional</h2>
+                <p>Revive el esplendor de tu vehículo con nuestro servicio de pulido automotriz. Eliminamos imperfecciones, realzamos el brillo y protegemos la pintura, dejando tu automóvil con un acabado resplandeciente y duradero</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="descripcion">
+        <div>
+            <h1>¿Quienes somos?</h1>       
+            <p>En Autoverstat, nos dedicamos con pasión y dedicación al arte de la pintura automotriz. Nuestra misión es brindar a nuestros clientes un servicio excepcional, combinando la más alta calidad en acabados con precios justos. Valoramos cada vehículo como si fuera propio y nos esforzamos por superar las expectativas de nuestros clientes en cada proyecto. Estamos comprometidos en ofrecer un servicio personalizado y cuidadoso, asegurando que cada vehículo salga de nuestro taller con un acabado impecable. Confíe en nosotros para darle a su vehículo el toque final que merece</p>
+        </div>
+
+            <img src="/image/descripcion1.jpg" alt="imagen_descripcion">
+        
+    </section>
+
+    <!-- <section class="contacto">
+        <h1 id="contacto" >Contacto</h1>
+        <form action="/contact" method="post"> 
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section> -->
+
+    <footer>
+        <div class="footer_social">
+            <a href="https://www.facebook.com/autoverstat/"><img src="/image/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/autoverstat/?hl=es"><img src="/image/instagram.png" alt="Instagram"></a>
+            <a href="https://wa.me/+50498783137"><img src="/image/whatsapp.png" alt="WhatsApp"></a>
+        </div>
+        <p>Copyright © 2023 Autoverstat. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+
+     <script src="/script.js"></script>
+
+</body>
+</html>
