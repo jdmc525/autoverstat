@@ -124,7 +124,7 @@ body {
 /******HEADER*****/
 
 .hidden{
-    display: none !important;
+    opacity: 0 !important;
 }
 
 

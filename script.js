@@ -54,6 +54,7 @@ menuPhone.addEventListener('click', togglePhoneMenu);
 
 function togglePhoneMenu() {
     menuPhoneHeader.classList.toggle('hidden')
+    menuPhoneHeader.animate('menuPhoneAnimation')
 }
 
 
